@@ -1,205 +1,35 @@
-.calculator-container {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr;
-border: 2px solid #C82A25;
-margin: 0 auto;
-top: 50%;
-left: 50%;
-position: absolute;
-transform: translate(-50%, -50%);
-width: 15vw;
-height: 45vh;
+.container {
+    width: 250px;
+    height: 250px;
+    margin: 150px 500px;
 }
 
-.calculator-display {
-grid-row: 1/2;
-grid-column: 1/5;
-border: 1px solid #C82A25;
-font-size: 2.5rem;
-text-align: right;
-background-color: #372829;
-color: white;
-  }
+.main-display {
+    height: 60px;
+    background: black;
+    color: white;
+    text-align: right;
+    font-size: 22pt;
+    line-height: 60px;
+}
 
-.clearbutton {
-grid-row: 2/3;
-grid-column: 1/4;
-font-size: 1.5rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: grey;
-  }
+.number-button {
+    border: 0.5px solid #AB2929;
+    color: black;
+    font-size: 22pt;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+}
 
-.divide {
-grid-row: 2/3;
-grid-column: 4/5;
-font-size: 2.5rem;
-border: 1px solid #C82A25;
-background-color: #C70039;
-color: white;
-  }
-
-.seven {
-grid-row: 3/4;
-grid-column: 1/2;
-font-size: 2rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: black;
-  }
-
-.eight {
-grid-row: 3/4;
-grid-column: 2/3;
-font-size: 2rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: black;
-  }
-
-.nine {
-grid-row: 3/4;
-grid-column: 3/4;
-font-size: 2rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: black;
-  }
-
-.minus {
-grid-row: 3/4;
-grid-column: 4/5;
-font-size: 2.5rem;
-border: 1px solid #C82A25;
-background-color: #C70039;
-color: white;
-  }
-
-.four {
-grid-row: 4/5;
-grid-column: 1/2;
-font-size: 2rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: black;
-  }
-
-.five {
-grid-row: 4/5;
-grid-column: 2/3;
-font-size: 2rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: black;
-  }
-
-.six {
-grid-row: 4/5;
-grid-column: 3/4;
-font-size: 2rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: black;
-  }
-
-.plus {
-grid-row: 4/5;
-grid-column: 4/5;
-font-size: 2.5rem;
-border: 1px solid #C82A25;
-background-color: #C70039;
-color: white;
-  }
-
-.one {
-grid-row: 5/5;
-grid-column: 1/2;
-font-size: 2rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: black;
-  }
-
-.two {
-grid-row: 5/5;
-grid-column: 2/3;
-font-size: 2rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: black;
-  }
-
-.three {
-grid-row: 5/5;
-grid-column: 3/4;
-font-size: 2rem;
-border: 1px solid #C82A25;
-background-color: white;
-color: black;
-  }
-
-.equal {
-grid-row: 5/5;
-grid-column: 4/5;
-font-size: 2.5rem;
-border: 1px solid #C82A25;
-background-color: #C70039;
-color: white;
-  }
-
-.clearbutton:hover {
-background-color: #BDBABA;
-  }
-
-.divide:hover {
-background-color: #BDBABA;
-  }
-
-.seven:hover {
-background-color: #BDBABA;
-  }
-
-.eight:hover {
-background-color: #BDBABA;
-  }
-
-.nine:hover {
-background-color: #BDBABA;
-  }
-
-.minus:hover {
-background-color: #BDBABA;
-  }
-
-.four:hover {
-background-color: #BDBABA;
-  }
-
-.five:hover {
-background-color: #BDBABA;
-  }
-
-.six:hover {
-background-color: #BDBABA;
-  }
-
-.plus:hover {
-background-color: #BDBABA;
-  }
-
-.one:hover {
-background-color: #BDBABA;
-  }
-
-.two:hover {
-background-color: #BDBABA;
-  }
-
-.three:hover {
-background-color: #BDBABA;
-  }
-
-.equal:hover {
-background-color: #BDBABA;
-  }
+.operator-button {
+   border: 0.5px solid #AB2929;
+   background: red;
+   font-size: 22pt;
+   color: white;
+   text-align: center;
+   height: 60px;
+   line-height: 60px;
+   cursor: pointer;
+}
