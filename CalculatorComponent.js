@@ -66,25 +66,36 @@ handleOperatorClick(nextOperator) {
 
 render() {
   return (
-    <div className="calculator-container">
-      <div className="calculator-display">{this.state.displayValue}</div>
-
-<button className="clearbutton" onClick={() =>{this.handleClearClick('clear')}}>clear</button>
-<button className="one" onClick={() =>{this.handleNumberClick('1')}}>1</button>
-<button className="two" onClick={() =>{this.handleNumberClick('2')}}>2</button>
-<button className="three" onClick={() =>{this.handleNumberClick('3')}}>3</button>
-<button className="four" onClick={() =>{this.handleNumberClick('4')}}>4</button>
-<button className="five" onClick={() =>{this.handleNumberClick('5')}}>5</button>
-<button className="six" onClick={() =>{this.handleNumberClick('6')}}>6</button>
-<button className="seven" onClick={() =>{this.handleNumberClick('7')}}>7</button>
-<button className="eight" onClick={() =>{this.handleNumberClick('8')}}>8</button>
-<button className="nine" onClick={() =>{this.handleNumberClick('9')}}>9</button>
-<button className="divide" onClick={() =>{this.handleOperatorClick('/')}}>/</button>
-<button className="minus" onClick={() =>{this.handleOperatorClick('-')}}>-</button>
-<button className="plus" onClick={() =>{this.handleOperatorClick('+')}}>+</button>
-<button className="equal" onClick={() =>{this.handleOperatorClick('=')}}>=</button>
-
+    <div className="container">
+     <div className="col-sm">
+      <div className="row">
+        <div className="col-sm main-display">{this.state.displayValue}</div>
+      </div>
+      <div className="row">
+        <div className="col-sm-9 number-button" onClick={() =>{this.handleClearClick('clear')}}>Clear</div>
+        <div className="col-sm-3 operator-button" onClick={() =>{this.handleOperatorClick('/')}}>&divide;</div>
+      </div>
+      <div className="row">
+             <div className="col-sm number-button" onClick={() =>{this.handleNumberClick('7')}}>7</div>
+             <div className="col-sm number-button" onClick={() =>{this.handleNumberClick('8')}}>8</div>
+             <div className="col-sm number-button" onClick={() =>{this.handleNumberClick('9')}}>9</div>
+             <div className="col-sm operator-button" onClick={() =>{this.handleOperatorClick('-')}}>-</div>
+      </div>
+      <div className="row">
+             <div className="col-sm number-button" onClick={() =>{this.handleNumberClick('4')}}>4</div>
+             <div className="col-sm number-button" onClick={() =>{this.handleNumberClick('5')}}>5</div>
+             <div className="col-sm number-button" onClick={() =>{this.handleNumberClick('6')}}>6</div>
+           <div className="col-sm operator-button" onClick={() =>{this.handleOperatorClick('+')}}>+</div>
+      </div>
+      <div className="row">
+             <div className="col-sm number-button" onClick={() =>{this.handleNumberClick('1')}}>1</div>
+             <div className="col-sm number-button" onClick={() =>{this.handleNumberClick('2')}}>2</div>
+             <div className="col-sm number-button" onClick={() =>{this.handleNumberClick('3')}}>3</div>
+             <div className="col-sm operator-button" onClick={() =>{this.handleOperatorClick('=')}}>=</div>
+      </div>
+     </div>
     </div>
+
     );
   }
 }
